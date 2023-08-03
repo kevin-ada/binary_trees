@@ -30,7 +30,7 @@ int main(void)
 
 		printf("Is %d a root: %d\n", root->n, ret);
 
-		ret = binary_tree_is_root(root->right)
+		ret = binary_tree_is_root(root->right);
 		printf("Is %d a root: %d\n", root->right->n, ret);
 
 		ret = binary_tree_is_root(root->right->right);
