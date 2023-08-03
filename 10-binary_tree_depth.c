@@ -8,21 +8,8 @@
  *Return: returnds the depth of the of the node 0
  */
 
-size_t binary_tree_depth(const binary_tree-t *tree)
+size_t binary_tree_depth(const binary_tree_t *tree)
 {
-	size_t count = 0;
-
-	if (tree == NULL)
-	{
-		return (0);
-	}
-
-	while (tree->parent)
-	{
-		count++;
-		tree = tree->parent;
-	}
-
-	return (count);
+	return ((tree && tree->parent) ? 1 + binary_tree-depth(tree->parent) : 0);
 }
 
