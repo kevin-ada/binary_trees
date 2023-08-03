@@ -10,11 +10,11 @@
 
 size_t binary_tree_height(const binary_tree_t *tree)
 {
-	size_t x;
+	unsigned int x;
 
 	x = 0;
 
-	size_t y;
+	unsigned int y;
 
 	y = 0;
 
